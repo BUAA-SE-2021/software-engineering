@@ -6,11 +6,9 @@
 
 使用EA文件夹下面的EA120_Reg_CN直接安装即可
 
-激活码在ceack文件夹里面
+激活码在crack文件夹里面
 
 ### Project 仅试用 
-
-破解版在找在找了
 
 #### 2019版：
 
@@ -25,13 +23,28 @@ https://bhpan.buaa.edu.cn:443/link/7E24F63097697A652BD1770FB51F0BD0
 
 
 
-2017版 适配win7：
+#### 2017版 适配win7：
+
 迅雷下载地址：
 ed2k://|file|cn_project_professional_2016_x86_x64_dvd_6966612.iso|2588266496|DEF65A0A9B12D8A8B734528800F625D5|/
 这个链接需要的迅雷客户端使用
 北航网盘地址：https://bhpan.buaa.edu.cn:443/link/86E7DD169F5CA41DD278068625A61D56
 
 解压双击找到 setup直接安装就可以了。
+
+
+
+#### 目前的一款破解软件：MicroKMS_v20.09.12_N
+
+关闭project 
+
+打开MicroKMS_v20.09.12_N
+
+##### 点击 激活project2019-2019pro
+
+部分解决方案：http://www.yishimei.cn/network/319.html
+
+
 
 
 
