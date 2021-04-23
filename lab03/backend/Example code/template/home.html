@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        a.button{
+            margin: 5px 0;
+            padding: 10px 0;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            letter-spacing: 1px;
+            border: solid 1px #aaa;
+            color: #333;
+            text-decoration: none;
+        }
+
+        a.button:hover{
+            background-color: #eee;;
+        }
+
+        .welcome{
+            margin: 0 auto 30px;
+            padding: 3px 15px;
+            width: fit-content;
+            font-size: 21px;
+            color: #565656;
+            font-weight: bold;
+            border-left: solid 3px #aaa;
+            border-right: solid 3px #aaa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 30px"></div>
+    {% if username %}
+        <p class="welcome">Hello {{ username }} !</p>
+        <a class="button" href="         ">查看成绩</a>
+        <br/>
+        <a class="button" href="../logout">退出登录</a>
+    {% else %}
+        <p class="welcome">Hello world !</p>
+        <a class="button" href="../login">登录</a>
+        <br/>
+        <a class="button" href="../register">注册</a>
+        <br/>
+    {% endif %}
+    {% if message %}
+        <script type="text/javascript">
+            alert("{{ message }}");
+        </script>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        a.button, button{
+            margin: 5px 10px;
+            padding: 10px 0;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            letter-spacing: 1px;
+            border: solid 1px #aaa;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+        }
+
+        a.button:hover, button:hover{
+            background-color: #eee;
+        }
+
+        input{
+            margin: 6px 0;
+            padding: 0 10px;
+            width: 230px;
+            font-size: 16px;
+            line-height: 36px;
+            border: solid 1px #aaa;
+            border-radius: 6px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        button{
+            margin: 6px 0;
+            padding: 0 10px;
+            width: 250px;
+            font-size: 16px;
+            line-height: 36px;
+            border: solid 1px #aaa;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>注 册</h1>
+    <form action="/register/" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="请输入用户名"/>
+        <br/>
+        <input type="password" name="password1" placeholder="请输入密码"/>
+        <br/>
+        <input type="password" name="password2" placeholder="请确认密码"/>
+        <br/>
+        <button type="submit">提 交</button>
+        <br/>
+    </form>
+    <div style="margin: 15px 0;height: 1px; background-color: #eee;"></div>
+    <a class="button" href="../">主页</a>
+    <a class="button" href="../login">去登录</a>
+        {% if message %}
+            <script type="text/javascript">
+                alert("{{ message }}");
+            </script>
+        {% endif %}
+</body>
+</html>
